@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 kitasuke. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public protocol MenuViewCustomizable {
     var backgroundColor: UIColor { get }
@@ -37,7 +37,7 @@ public extension MenuViewCustomizable {
         return 0.3
     }
     var deceleratingRate: CGFloat {
-        return UIScrollViewDecelerationRateFast
+        return UIScrollView.DecelerationRate.fast.rawValue
     }
     var selectedItemCenter: Bool {
         return true
